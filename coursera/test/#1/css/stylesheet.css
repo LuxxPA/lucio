@@ -42,40 +42,32 @@ h1 {
 .twitter {
 	width: 30px;
 	height: 30px;
-	background-color: #1DA0F2;
-	padding-top: 7px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.3em;
-	color: white;
+	padding: 3px;
+	background-image: url("http://www.tourofthegila.com/wp-content/uploads/2014/03/twittericon.png");
+	background-size: cover;
 	margin-top: -40px;
+	margin-right: 0px;
 	float: right;
 }
 
 .facebook {
 	width: 30px;
 	height: 30px;
-	background-color: #3B5998;
-	padding-top: 7px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.3em;
-	color: white;
+	padding: 3px;
+	background-image: url("https://wclawyers.org/wp-content/themes/total-child/images/social/facebook.png");
+	background-size: cover;
 	margin-top: -40px;
-	margin-right: 33px;
+	margin-right: 40px;
 	float: right;
 }
 
 .instagram {
 	width: 30px;
 	height: 30px;
-	background-image: url("img/ig.png") no-repeat;
-	padding-top: 7px;
-	text-align: center;
-	font-weight: bold;
-	font-size: 1.3em;
-	color: white;
+	padding: 3px;
+	background-image: url("https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-square2-512.png");
+	background-size: cover;
 	margin-top: -40px;
-	margin-right: 66px;
+	margin-right: 80px;
 	float: right;
 }
