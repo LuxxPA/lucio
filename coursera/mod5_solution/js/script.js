@@ -83,7 +83,10 @@ document.addEventListener("DOMContentLoaded", function (event) {
 showLoading("#main-content");
 $ajaxUtils.sendGetRequest(
   allCategoriesUrl,
-  [...], // ***** <---- TODO: STEP 1: Substitute [...] ******
+  function (responseText) {
+  	document.querySelector("#main-content")
+  		.innerHTML = responseText;
+  }, // ***** <---- TODO: STEP 1: Substitute [...] ******
   true); // Explicitely setting the flag to get JSON from server processed into an object literal
 });
 // *** finish **
@@ -103,6 +106,18 @@ function buildAndShowHomeHTML (categories) {
       // variable's name implies it expects.
       // var chosenCategoryShortName = ....
 
+      $ajaxUtils.sendGetRequest(
+      	categoryHtml,
+      	function (categoryHtml) {
+      		var chosenCategoryShortName =
+      			buildAndShowHomeHTML(categories,
+      								homeHtml,
+      								categoryHtml);
+      		insertHtml("#main-content", chosenCategoryShortName);
+      	},
+      	false);
+	  },
+	  false);
 
       // TODO: STEP 3: Substitute {{randomCategoryShortName}} in the home html snippet with the
       // chosen category from STEP 2. Use existing insertProperty function for that purpose.
@@ -117,6 +132,27 @@ function buildAndShowHomeHTML (categories) {
       //
       // var homeHtmlToInsertIntoMainPage = ....
 
+function buildAndShowHomeHTML(categories,
+							homeHtml,
+							categoryHtml) {
+
+	var finalHtml = homeHtml;
+	finalHtml += "<section class='row'>";
+
+	for (var i = 0; i < categories.length; i++) {
+		var html = categoryHtml;
+		var name = "" + categories[i].name;
+		var short_name = categories[i].short_name;
+		html =
+			insertProperty(html, "name", name);
+		html =
+			insertProperty(html, "short_name", short_name);
+		finalHtml += html;
+	}
+
+	finalHtml += "</section>";
+	return finalHtml;
+}
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
       // Use the existing insertHtml function for that purpose. Look through this code for an example
