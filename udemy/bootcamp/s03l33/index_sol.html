@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form value="http://www.google.co.uk">
+	<label for="firstName">First Name: </label>
+		<input id="firstName" type="text" name="firstName" placeholder="First Name" required>
+	<label for="lastName">First Name: </label>
+		<input id="lastName" type="text" name="lastName" placeholder="Last Name" required>
+
+<br>
+
+	<label for="m" name="sex">Male</label>
+		<input id="m" value="m" type="radio" name="sex">
+	<label for="f" name="sex">Female</label>
+		<input id="f" value="f" type="radio" name="sex">
+	<label for="o" name="sex">Other</label>
+		<input id="o" value="o" type="radio" name="sex">
+
+<br>
+
+	<label for="email">Email: </label>
+		<input id="email" type="email" name="email" placeholder="Your Email" required>
+	<label for="password">Password: </label>
+		<input id="password" type="password" name="password" placeholder="Password" pattern=".{5,10}" required title="5 to 10 characters" required>
+
+<br>
+
+	<label>
+	Birthday:
+		<select name="month">
+			<option>Month</option>
+			<option value="1">Jan</option>
+			<option value="2">Feb</option>
+		</select>
+		<select name="day">
+			<option>Day</option>
+			<option value="1">1</option>
+			<option value="2">2</option>
+		</select>
+		<select name="year">
+			<option>Year</option>
+			<option>1990</option>
+			<option>1990</option>
+		</select>
+	</label>
+
+<br>
+
+	<label for="t&c">I agree to the terms and conditions</label>
+		<input id="t&c" type="checkbox" name="t&c" required>
+
+<br>
+
+	<button>Submit</button>
+</form>
+
+</body>
+</html>
