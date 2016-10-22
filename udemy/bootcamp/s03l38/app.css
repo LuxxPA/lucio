@@ -1,0 +1,26 @@
+body {
+/*	background: url(http://2.bp.blogspot.com/-RMy7XRoykpg/UHcBk--xOCI/AAAAAAAAADg/UbPMgVs27sQ/s1600/Small+Rocks.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;*/
+	background: pink;
+}
+
+h1 {
+	color: red;
+	/*border-color: red;
+	border-width: 1px;
+	border-style: solid;*/
+	border: 5px red dashed;
+}
+
+li {
+	color: #FA960A;
+}
+
+h4 {
+	color: rgb(200, 50, 10);
+}
+
+h2 {
+	color: rgba(200, 50, 10, 0.7);
+}
