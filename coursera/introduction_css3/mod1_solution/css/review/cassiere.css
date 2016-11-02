@@ -1,0 +1,38 @@
+img{
+  width:0;
+  height: 0;
+}
+h1{
+  margin:0;
+  text-align:center;
+  background-color: #AAAAAA;
+  height:50px;
+  text-transform: uppercase;
+  color:#FFFFFF;
+}
+a{
+  color:#000000;
+  font-weight:bold;
+  background-color: #eeffff;
+}
+nav{
+  padding-top: 10px;
+  
+  background-color: #AAAAAA;
+  margin-bottom: 10px;
+ color:#000000; 
+}
+
+h2{
+  margin:0;
+  text-transform: uppercase;
+  text-align:left;
+  color: #000066;
+  background-color: #888888;
+}
+
+
+section{
+   background-color: #888888;
+  font-weight:bold;
+}

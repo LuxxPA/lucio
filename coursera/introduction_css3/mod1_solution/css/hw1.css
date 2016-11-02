@@ -1,0 +1,38 @@
+body {
+	font-size: 0.9em;
+}
+
+header {
+	background-color: #B2B2B2;
+}
+
+a {
+	background-color: #C1C1C1;
+}
+
+a:link {
+	color: #000;
+}
+
+a:visited {
+	color: #000;
+}
+
+h1 {
+	text-transform: uppercase;
+	color: #FFF;
+	text-align: center;
+}
+
+aside {
+	display: none;
+}
+
+section {
+	background-color: #787878;
+}
+
+h2 {
+	color: #111177;
+	text-transform: uppercase;
+}
